@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <a href="#"><img src="img/" width="220" height="47" alt="Техномарт"></a>
+    <a href="index.html"><img src="img/логотип.svg" width="220" height="47" alt="Техномарт"></a>
     <p>
       Поиск
     </p>
@@ -20,7 +20,7 @@
       Корзина:10
     </p>
     <p>
-      Оформить заказ
+      <button type="button" name="checkout">Оформить заказ</button>
     </p>
     <p>
       <i>Интернет-магазин<br>
@@ -59,7 +59,13 @@
       <h2>ПЕРФОРАТОРЫ</h2>
       <section>
         <p>Фильтр</p>
-        <p>Цена</p>
+        <form class="" action="index.html" method="post">
+          <label for="price">Цена</label>
+          <input type="range" min="0" max="30000" step="1" name="price" value="20000" id="price">
+          <p>0</p>
+          <p>-</p>
+          <p>30000</p>
+        </form>
       </section>
       <section>
         <h3>Сортировка</h3>
@@ -72,26 +78,30 @@
       </section>
       <section>
         <h3>ПРОИЗВОДИТЕЛИ:</h3>
-        <!--Тут будет форма на производителей -->
-        <p>
-          BOSCH
-          <br> ИНТЕРСКОЛ
-          <br> MAKIta
-          <br> Dewalt
-          <br> Hitachi
-          <br>
-        </p>
+        <form class="" action="index.html" method="post">
+          <input type="checkbox" name="manufacturer1" value="BOSCH" id="manufacturerBOSCH" checked>
+          <label for="manufacturerBOSCH">BOSCH</label>
+          <input type="checkbox" name="manufacturer2" value="ИНТЕРСКОЛ" id="manufacturerИНТЕРСКОЛ">
+          <label for="manufacturerИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+          <input type="checkbox" name="manufacturer3" value="MAKIta" id="manufacturerMAKIta" checked>
+          <label for="manufacturerMAKIta">MAKIta</label>
+          <label for="manufacturerDewalt">Dewalt</label>
+          <input type="checkbox" name="manufacturer4" value="Dewalt" id="manufacturerDewalt">
+          <label for="manufacturerDewalt">Dewalt</label>
+          <input type="checkbox" name="manufacturer5" value="Hitachi" id="manufacturerHitachi">
+          <label for="manufacturerHitachi">Hitachi</label>
+        </form>
       </section>
       <section>
         <h2>Питание</h2>
-        <!--Тут будет форма на Питание -->
-        <p>
-          Аккумуляторные
-          <br> Сетевые
-          <br>
-        </p>
+        <form class="" action="index.html" method="post">
+          <input type="radio" name="power" value="accumulator" id="accumulator" checked>
+          <label for="">Аккумуляторные</label>
+          <input type="radio" name="power" value="mains" id="mains">
+          <label for="mains">Сетевые</label>
+        </form>
       </section>
-      <button type="button" name="button">Показать</button>
+      <button type="button" name="show">Показать</button>
       <section>
         <ul>
           <li>
@@ -167,7 +177,7 @@
     </section>
   </main>
   <footer>
-    <img src="img/" width="220" height="68" alt="Техномарт">
+    <a href="index.html"><img src="img/логотип.svg" width="220" height="47" alt="Техномарт"></a>
     <nav>
       <ul>
         <li><a href="#">Компания</a></li>
