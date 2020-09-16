@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -24,8 +26,8 @@
     </p>
     <p>
       <i>Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта.</i>
+        строительных материалов<br>
+        и инструментов для ремонта.</i>
     </p>
     <a href="#">+7(812) 555-05-55</a>
     <p>
@@ -61,7 +63,8 @@
         <p>Фильтр</p>
         <form class="" action="index.html" method="post">
           <label for="price">Цена</label>
-          <input type="range" min="0" max="30000" step="1" name="price" value="20000" id="price">
+          <input type="range" min="0" max="30000" step="1" name="price" value="20000" id="price" oninput="price">
+          <output class="result" name="result" id="result"></output>
           <p>0</p>
           <p>-</p>
           <p>30000</p>
@@ -78,14 +81,13 @@
       </section>
       <section>
         <h3>ПРОИЗВОДИТЕЛИ:</h3>
-        <form class="" action="index.html" method="post">
+        <form action="index.html" method="post">
           <input type="checkbox" name="manufacturer1" value="BOSCH" id="manufacturerBOSCH" checked>
           <label for="manufacturerBOSCH">BOSCH</label>
           <input type="checkbox" name="manufacturer2" value="ИНТЕРСКОЛ" id="manufacturerИНТЕРСКОЛ">
           <label for="manufacturerИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
           <input type="checkbox" name="manufacturer3" value="MAKIta" id="manufacturerMAKIta" checked>
           <label for="manufacturerMAKIta">MAKIta</label>
-          <label for="manufacturerDewalt">Dewalt</label>
           <input type="checkbox" name="manufacturer4" value="Dewalt" id="manufacturerDewalt">
           <label for="manufacturerDewalt">Dewalt</label>
           <input type="checkbox" name="manufacturer5" value="Hitachi" id="manufacturerHitachi">
@@ -94,7 +96,7 @@
       </section>
       <section>
         <h2>Питание</h2>
-        <form class="" action="index.html" method="post">
+        <form action="index.html" method="post">
           <input type="radio" name="power" value="accumulator" id="accumulator" checked>
           <label for="">Аккумуляторные</label>
           <input type="radio" name="power" value="mains" id="mains">
@@ -105,13 +107,13 @@
       <section>
         <ul>
           <li>
-            <img src="img/" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <p>Перфоратор BOSCH BFG 6000</p>
             <p>30500</p>
             <p>25500</p>
           </li>
           <li>
-            <img src="img/" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <p>Перфоратор BOSCH BFG 6000</p>
             <p>30500</p>
             <p>25500</p>
@@ -124,34 +126,34 @@
             <p>25500</p>
           </li>
           <li>
-            <img src="img/" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <p>Перфоратор BOSCH BFG 3000</p>
             <p>22500</p>
             <p>15500</p>
           </li>
-          <li><img src="img/" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          <li><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <p>Перфоратор BOSCH BFG 6000</p>
             <p>30500</p>
             <p>25500</p>
           </li>
           <li>
-            <img src="img/" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <p>Перфоратор BOSCH BFG 2000</p>
             <p>12500</p>
           </li>
           <li>
-            <img src="img/" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <p>Перфоратор BOSCH BFG 3000</p>
             <p>22500</p>
             <p>15500</p>
           </li>
-          <li><img src="img/" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          <li><img src="img/6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <p>Перфоратор BOSCH BFG 6000</p>
             <p>30500</p>
             <p>25500</p>
           </li>
           <li>
-            <img src="img/" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <p>Перфоратор BOSCH BFG 2000</p>
             <p>12500</p>
           </li>

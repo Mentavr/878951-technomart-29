@@ -1,0 +1,221 @@
+:root {
+  /* basic-color */
+  --basic-red: #EE3643;
+  --basic-black: #000000;
+  --basic-grey: #888888;
+  --basic-white: #FFFFFF;
+  --basic-opacity-white: rgba(0, 0, 0, 0.0001);
+  /* special-dark */
+  --special-dark: #32425C;
+  --special-darked: #293449;
+  /* services-color */
+  --materials-color: #FFBF47;
+  --instruments-color: #3BBCE3;
+  --technics-color: #DC91D8;
+  --discounts-color: #8ED78F;
+  --free-delivery-color: #FFC047;
+  --opacity-grey: rgba(0, 0, 0, 0.25);
+  /* popular-wrapper */
+  --popular-wrapper: #F9F5F0;
+  /* popular-products*/
+  /*
+  --popular-wrapper:#F9F5F0;
+  --basic-red: #EE3643;
+  --basic-white:#FFFFFF;
+  --basic-opacity-white: rgba(0, 0, 0, 0.0001);
+  --basic-black: #000000;
+  */
+  --special-grey: #A9A9A9;
+  /* popular-manufacturers */
+  /*
+  --popular-wrapper:#F9F5F0;
+  --basic-red: #EE3643;
+  --basic-grey:#888888;
+  --basic-white:#FFFFFF;
+  */
+  /* service-center */
+  /*
+  --special-dark:#32425C;
+  --special-darked:#293449;
+  --basic-white:#FFFFFF;
+  --basic-black: #000000;
+  */
+  --special-blue: #F1F5F7;
+  /* company */
+  /*
+  --basic-black:#000000;
+  --basic-grey:#888888;
+  --basic-white:#FFFFFF;
+  --basic-red: #EE3643;
+  */
+  /* contacts */
+  /*
+  --basic-black:#000000;
+  --basic-grey:#888888;
+  --basic-white:#FFFFFF;
+  --basic-red: #EE3643;
+  --basic-opacity-white: rgba(0, 0, 0, 0.0001);
+  */
+  /* main-footer */
+  /*
+  --special-dark:#32425C;
+  --special-darked:#293449;
+  --basic-white:#FFFFFF;
+  */
+  --footer-yellow: #FFDA96;
+  --footer-white: #F3F7F9;
+  --special-blue: #F1F5F7;
+  /* Остальные с второй страницы, потом переделаю */
+  --basic-yellow: #F9F5F0;
+  --special-yellow: #F7F3EC;
+  --special-second-whiteblue: #F2F6F8;
+  --special-green: #63A63E;
+  --special-whitegreen: #8ED78F;
+}
+
+.page-body{
+  font-family:  'Cuprum','PT Sans', Arial, sans-serif;
+}
+/* header */
+
+.main-header {
+  font-family: 'Cuprum', Arial, sans-serif;
+  background-color: #F3F7F9;
+  box-sizing: border-box;
+}
+.header-elems-wrapper {
+  background-color:var(--special-darked);
+  text-align:center;
+}
+.number{
+  background-color: #F3F7F9; /* потом добавлю в :root, пропустил */
+}
+.number-company{
+  border: 3px solid var(--basic-white);
+  background-color: : var(--basic-opacity-white);
+  padding: 7px 45px 8px 74px;
+}
+.bottom {
+  background-color: var(--basic-red);
+  color: white;
+}
+/* nav-header */
+.site-nav {
+  max-width: 940px;
+  background-color:var(--special-dark);
+  text-align: center;
+  margin: auto;
+  box-shadow: inset 0px -5px 0px #293449;
+}
+.site-nav-items{
+  list-style-type: none;
+}
+.site-nav-items a{
+  color: var(--basic-white);
+}
+/* main */
+.center{
+  background-color: white;
+}
+/* services */
+.services{
+  font-family: inherit;
+  text-align: center;
+}
+.services-list{
+  list-style-type: none;
+}
+.services-items{
+  color:var(--basic-white);
+}
+.materials {
+  background-color: var(--materials-color);
+}
+.instruments{
+  background-color: var(--instruments-color);
+}
+.technics{
+  background-color: var(--technics-color);
+}
+.discounts{
+  background-color: var(--discounts-color);
+}
+.free-delivery{
+  background-color: var(--free-delivery-color);
+}
+/* popular-products */
+
+.popular-products{
+  background-color: white;
+}
+.products-elems-wrapper{
+  background-color: var(--popular-wrapper);
+}
+.products-list{
+  margin: auto;
+  text-align: center;
+}
+.products-items{
+  list-style-type: none;
+}
+
+/* popular-manufacturers */
+.manufacturers-elems-wrapper{
+  background-color: var(--popular-wrapper);
+}
+.manufacturers-list{
+  margin:auto;
+}
+.manufacturers-items{
+  text-align: center;
+  list-style-type: none;
+}
+/* service-center */
+.service-center{
+  background-color: var(--special-blue);
+}
+/* company */
+
+/* main-footer */
+.main-footer {
+  background-color: var(--special-dark);
+}
+.footer-elems-wrapper{
+  background-color: var(--special-darked);
+}
+.footer-nav-list{
+  text-align:center;
+}
+.footer-nav-items{
+  list-style-type: none;
+}
+.footer-nav-items a {
+  color:var(--footer-white);
+}
+.footer-services-list{
+  text-align:center;
+}
+.footer-services-items{
+  list-style-type: none;
+}
+.footer-services-items a{
+  color:var(--footer-yellow);
+}
+.footer-social-networks-list{
+  text-align:center;
+}
+.footer-social-networks-items{
+  list-style-type: none;
+}
+.footer-social-networks-items a {
+  color:var(--footer-white);
+}
+.footer-link{
+  color:var(--footer-yellow);
+}
+.feedback-wrapper{
+  color:var(--footer-white);
+}
+.designed-wrapper{
+  color:var(--footer-white);
+}
