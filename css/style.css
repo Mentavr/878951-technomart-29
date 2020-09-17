@@ -87,7 +87,7 @@
   background-color:var(--special-darked);
   text-align:center;
 }
-.number{
+.header-number{
   background-color: #F3F7F9; /* потом добавлю в :root, пропустил */
 }
 .number-company{
