@@ -48,8 +48,8 @@
           </p>
         </div>
         <p>
-          <button class="enter-site" type="button">Войти</button>
-          <button class="registration-site" type="button">Регистрация</button>
+          <a href="#" class="header-link login-link" type="button">Войти</a>
+          <a href="#" class="header-link registration-link" type="button">Регистрация</a>
         </p>
       </div>
       <div class="site-container">
@@ -67,14 +67,10 @@
       </div>
     </div>
   </header>
-  <main class="center">
-    <div class="score-conteiner">
-      <h1>Магазин инструментов</h1>
-    </div>
+  <main class="center main-content">
+      <h1 class="visibilty-hidden">Магазин инструментов</h1>
     <section class="service">
-      <div class="service-heading">
-        <h2>Услуги</h2>
-      </div>
+        <h2 class="visibilty-hidden">Услуги</h2>
       <ul class="service-list">
         <li class="service-item materials-color">
           <h3 class="servece-paragraph">Материал</h3>
@@ -109,25 +105,23 @@
       </ul>
       <div class="carousel-wrapper">
         <div class="tagline-conteiner">
-          <div class="perforator-wrapper">
+          <div class="tagline-header-text">
             <p>Перфораторы</p>
           </div>
-          <div class="man-games-wrapper">
+          <div class="tagline-text">
             <p>Настоящие мужские игрушки</p>
           </div>
         </div>
         <div class="open-catalog-wrapper">
-          <a class="open-catalog" href="catalog.html">Открыть каталог</a>
+          <a class="red-link" href="catalog.html">Открыть каталог</a>
         </div>
       </div>
     </section>
-    <section class="popular-products">
-      <div class="product-elems-wrapper">
-        <div class="product-heading-wrapper">
-          <h2 class="product-heading">Популярные товары:</h2>
-        </div>
+    <section class="popular-products center">
+        <div class="section-accented">
+          <h2 class="product-heading section-title">Популярные товары:</h2>
         <div class="all-product-wrapper">
-          <a class="all-product" href="#">Все популярные товары</a>
+          <a class="red-link" href="#">Все популярные товары</a>
         </div>
       </div>
       <ul class="product-list">
@@ -195,63 +189,75 @@
       </ul>
     </section>
     <section class="popular-manufacturers">
-      <div class="manufacturers-elems-wrapper">
-        <h2 class="manufacturers-elems">Популярные производители:</h2>
+      <div class="section-accented">
+        <h2 class="section-title">Популярные производители:</h2>
         <div class="all-manufacturers-product-wrapper">
-          <a class="all-manufacturers-product" href="#">Все производители<a>
+          <a class="red-link" href="#">Все производители<a>
         </div>
       </div>
       <ul class="manufacturers-list">
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="bosch-logo" src="img/bosch.png" width="220" height="145" alt="BOSCH">
+        </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="makita-logo" src="img/makita.png" width="123" height="40" alt="MAKITA">
+           </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="dewalt-logo" src="img/dewalt.png" width="146" height="44" alt="DeWALT">
+          </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="interskol-logo" src="img/interskol.png" width="200" height="75" alt="Интерскол">
+          </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="hitachi-logo" src="img/hitachi.png" width="169" height="31" alt="HITACHI">
+          </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="jg-logo" src="img/lg.png" width="121" height="73" alt="LG">
+          </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="aeg-logo" src="img/aeg.png" width="151" height="96" alt="AEG">
+          </div>
         </li>
         <li class="manufacturers-item">
+          <div class="container-company-logo">
           <img class="metabo-logo" src="img/metabo.png" width="204" height="69" alt="Metabo">
+          </div>
         </li>
       </ul>
     </section>
-    <section class="service-center">
-      <div class="service-wrapper">
-        <div class="services-name-wrapper">
-          <h2 class="services-name">Сервисы</h2>
-        </div>
-        <div class="service-described">
+    <section class="desc">
+      <div class="center">
+          <h2 class="section-title">Сервисы</h2>
+        <div class="section-description">
           <p>
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
       </div>
-      <div class="service-center-list-wrapper">
-        <ul class="service-center-list">
-          <li class="service-center-item service-center-item-active сourier-delivery">Доставка</li>
-          <li class="service-center-item service-center-item-active guarantee">Гарантия</li>
-          <li class="service-center-item service-center-item-active credits">Кредит</li>
+      <div class="desc-list-wrapper">
+        <ul class="desc-list">
+          <li class="desc-item desc-item-active сourier-delivery">Доставка</li>
+          <li class="desc-item desc-item-active guarantee">Гарантия</li>
+          <li class="desc-item desc-item-active credits">Кредит</li>
         </ul>
       </div>
-      <section class="service-center-delivery">
-        <div class="delivery-center-wrapper">
-          <h3 class="delivery-center">Доставка</h3>
-        </div>
-        <div class="description-delivery-center delivery-image-car">
+      <section class="desc-delivery">
+          <h3 class="section-title">Доставка</h3>
+        <div class="section-description delivery-image-car">
           <p>
             Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
@@ -262,10 +268,8 @@
       </section>
     </section>
     <section class="company-tehnomart">
-      <div class="company-tehnomart-name-wrapper">
-        <h2 class="company-tehnomart-name">КОМПАНИЯ «Техномарт»</h2>
-      </div>
-      <div class="description-company-tehnomart">
+        <h2 class="section-title">КОМПАНИЯ «Техномарт»</h2>
+      <div class="section-description">
         <p>
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
@@ -281,14 +285,12 @@
         <li class="company-item">ЖелДорЭкспедиция</li>
       </ul>
       <div class="company-info-wrapper">
-        <a class="company-info" href=href="#">Подробнее о компании</a>
+        <a class="red-link" href=href="#">Подробнее о компании</a>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts-wrapper">
-        <h2 class="conntacts-name">КОНТАКТЫ</h2>
-      </div>
-      <div class="description-contacts-wrapper">
+        <h2 class="section-title">КОНТАКТЫ</h2>
+      <div class="section-description">
         <p>
           Вы можете забрать товар сами,
           <br> заехав в наш офис:
@@ -296,11 +298,9 @@
         </p>
       </div>
       <section class="map">
-        <div class="map-wrapper">
-          <h3>Улица компании</h3>
-        </div>
+          <h3 class="visibilty-hidden">Улица компании</h3>
         <div class="map-feedback-wrapper">
-          <a class="map-feedback" href="#">Заблудились? НапиШИТЕ НАМ!</a>
+          <a class="red-link map-feedback-link" href="#">Заблудились? НапиШИТЕ НАМ!</a>
         </div>
       </section>
     </section>
