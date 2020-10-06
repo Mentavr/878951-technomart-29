@@ -12,8 +12,7 @@
 <body class="page-body">
   <header class="main-header center">
     <div class="header-elems-wrapper">
-      <a class="main-logo-header" href="index.html"><img src="img/logo-technomart-header.svg" class="center-logo-header" width="108px"
-      height="18px" alt="Логотип компани техномарт"></a>
+      <a class="main-logo-header" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-header" width="108px" height="18px" alt="Логотип компани техномарт"></a>
       <div class="conteiner-search">
         <form>
           <div class="search-icon-wrapper">
@@ -67,17 +66,14 @@
     </div>
   </header>
   <main class="center main-content">
-    <h1 class="visibilty-hidden">Каталог перфораторов</h1>
-    <div class="way-wrapper">
-      <ul class="way-list">
-        <li class="way-item"></li>
-        <li class="way-item"><a href="#" class="text-catalog way-direction">Каталог</a></li>
-        <li class="way-item"><a href="#" class="text-catalog way-direction">Инструмент</a></li>
-        <li class="way-item"><a href="#" class="text-catalog way-direction">Перфораторы</a></li>
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Каталог</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Инструмент</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Перфораторы</a></li>
       </ul>
-    </div>
     <section class="sidebar-filter">
-      <h2 class="section-title way-title">ПЕРФОРАТОРЫ</h2>
+      <h1 class="section-title catalog-breadcrumb-title">ПЕРФОРАТОРЫ</h1>
       <section class="filter-product">
         <h2 class="visibilty-hidden">Фильтр по товарам</h2>
         <h3 class="main-filter text-catalog">Фильтр:</h3>
@@ -98,23 +94,23 @@
         </div>
         </div>
       </section>
-      <section class="variant-manufacturer">
-        <h2 class="paragraph-sidebar">ПРОИЗВОДИТЕЛИ:</h3>
-          <form class="manufacturer-variant" action="catalog.html" method="post">
-            <input class="variant" type="checkbox" name="manufacturer1" value="BOSCH" id="manufacturerBOSCH" checked>
+      <section class="option-manufacturer">
+        <h2 class="sidebar-name">ПРОИЗВОДИТЕЛИ:</h3>
+          <form class="manufacturer-option" action="catalog.html" method="post">
+            <input class="option" type="checkbox" name="manufacturer1" value="BOSCH" id="manufacturerBOSCH" checked>
             <label class="text-sidebar variant-style" for="manufacturerBOSCH">BOSCH</label>
-            <input class="variant" type="checkbox" name="manufacturer2" value="ИНТЕРСКОЛ" id="manufacturerИНТЕРСКОЛ">
-            <label class="text-sidebar variant-style" for="manufacturerИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-            <input class="variant" type="checkbox" name="manufacturer3" value="MAKIta" id="manufacturerMAKIta" checked>
+            <input class="option" type="checkbox" name="manufacturer2" value="ИНТЕРСКОЛ" id="manufacturerINTERSKOL">
+            <label class="text-sidebar variant-style" for="manufacturerINTERSKOL">ИНТЕРСКОЛ</label>
+            <input class="option" type="checkbox" name="manufacturer3" value="MAKIta" id="manufacturerMAKIta" checked>
             <label class="text-sidebar variant-style" for="manufacturerMAKIta">MAKIta</label>
-            <input class="variant" type="checkbox" name="manufacturer4" value="Dewalt" id="manufacturerDewalt">
+            <input class="option" type="checkbox" name="manufacturer4" value="Dewalt" id="manufacturerDewalt">
             <label class="text-sidebar variant-style" for="manufacturerDewalt">Dewalt</label>
-            <input class="variant" type="checkbox" name="manufacturer5" value="Hitachi" id="manufacturerHitachi">
+            <input class="option" type="checkbox" name="manufacturer5" value="Hitachi" id="manufacturerHitachi">
             <label class="text-sidebar variant-style" for="manufacturerHitachi">Hitachi</label>
           </form>
       </section>
-      <section class="variant-battery">
-        <h2 class="paragraph-sidebar">Питание:</h2>
+      <section class="option-battery">
+        <h2 class="sidebar-name">Питание:</h2>
         <form class="choice-battery" action="index.html" method="post">
           <input class="battery" type="radio" name="power" value="accumulator" id="accumulator" checked>
           <label class="accumulator-battery text-sidebar battery-style" for="accumulator">Аккумуляторные</label>
@@ -127,15 +123,16 @@
       </div>
     </section>
     <section class="sorting-product">
-      <h2 class="visibilty-hidden">Выбор товара по критерию</h2>
       <div class="sorting-product-wrapper">
-            <a href="#" class="text-catalog sorting-main">СОРТИРОВКА:</a>
-            <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
-            <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
-            <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
-            <a href="#" class="arrow-top"></a>
-            <a href="#" class="arrow-bottom"></a>
+      <h2 class="text-catalog">СОРТИРОВКА:</h2>
+      <div class="sorting-link">
+        <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
+        <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
+        <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
+        <a href="#" class="arrow-top"></a>
+        <a href="#" class="arrow-bottom"></a>
       </div>
+    </div>
       <ul class="product-list">
         <li class="product-item">
           <img src="img/6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -289,8 +286,7 @@
     </section>
   </main>
   <footer class="main-footer center">
-    <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart-footer.svg" class="center-logo-footer" width="138px"
-    height="23px" alt="Логотип компании техномарт"</img></a>
+    <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-footer" width="138px" height="23px" alt="Логотип компании техномарт" </img></a>
     <nav class="footer-nav">
       <ul class="footer-nav-list">
         <li class="footer-nav-item"><a class="footer-nav-link" href="#">Компания</a></li>
