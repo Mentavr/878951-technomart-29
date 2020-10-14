@@ -5,32 +5,38 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="main-header center">
-    <div class="header-elems-wrapper">
-      <a class="main-logo-header" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-header" width="108px" height="18px" alt="Логотип компани техномарт"></a>
-      <div class="conteiner-search">
-        <form>
-          <div class="search-icon-wrapper">
-            <input class="search-element" type="search" name="search-header" placeholder="Поиск:" id="search">
+  <header class="main-header">
+    <div class="header-elems-conteiner">
+      <div class="header-elems-wrapper center">
+        <div class="logo-grid-header">
+          <a class="main-logo-header" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-header" width="108px" height="18px" alt="Логотип компани техномарт"></a>
+          <div class="container-search">
+            <form>
+              <div class="search-icon-wrapper">
+                <input class="search-element" type="search" name="search-header" placeholder="Поиск:" id="search">
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div class="conteiner-bookmark">
-        <a class="basket-bookmark bookmark-product" type="button">Закладки:0</a>
-      </div>
-      <div class="conteiner-basket">
-        <a class="basket-bookmark basket-product" type="button"> Корзина:0</a>
-      </div>
-      <div class="conteiner-buy-product">
-        <a class="main-buy-product" type="button">Оформить заказ</a>
+        </div>
+        <div class="login-grid-header">
+          <div class="container-bookmark">
+            <a class="basket-bookmark bookmark-product" type="button">Закладки:0</a>
+          </div>
+          <div class="container-basket">
+            <a class="basket-bookmark basket-product" type="button"> Корзина:0</a>
+          </div>
+          <div class="container-buy-product">
+            <a class="main-buy-product" type="button">Оформить заказ</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="header-wrapper">
+    <div class="header-container">
       <div class="header-center-elems">
         <div class="description-wrapper">
           <p>
@@ -39,16 +45,16 @@
               и инструментов для ремонта.</i>
           </p>
         </div>
-        <div class="header-contacts">
-          <a class="number-company" href="tel:+78125550555">+7(812) 555-05-55</a>
+        <div class="header-center-contacts">
+          <a class="number-center-company" href="tel:+78125550555">+7(812) 555-05-55</a>
           <p>
             г.Санкт-Питербург. ул. Б.Конюшенная, д. 19/8
           </p>
         </div>
-        <p>
-          <a href="#" class="header-link login-link" type="button">Войти</a>
-          <a href="#" class="header-link registration-link" type="button">Регистрация</a>
-        </p>
+        <div class="center-link">
+          <a href="#" class="header-center-link login-center-link" type="button">Войти</a>
+          <a href="#" class="header-center-link registration-center-link" type="button">Регистрация</a>
+        </div>
       </div>
       <div class="site-container">
         <nav class="site-nav">
@@ -65,15 +71,21 @@
       </div>
     </div>
   </header>
-  <main class="center main-content">
-    <ul class="breadcrumb-list">
-      <li class="breadcrumb-item"></li>
-      <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Каталог</a></li>
-      <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Инструмент</a></li>
-      <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Перфораторы</a></li>
-    </ul>
-    <section class="sidebar-filter">
-      <h1 class="section-title catalog-breadcrumb-title">ПЕРФОРАТОРЫ</h1>
+  <main class="main-content">
+    <div class="center">
+      <div class="breadcrumb-wrapper">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item"></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Каталог</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Инструмент</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-catalog breadcrumb-direction">Перфораторы</a></li>
+      </ul>
+    </div>
+      <section class="catalog-breadcrumb-title">
+      <h1 class="section-title">ПЕРФОРАТОРЫ</h1>
+    </section>
+    <div class="catalog-container">
+  <div class="sidebar-wrapper">
       <section class="filter-product">
         <h2 class="visibilty-hidden">Фильтр по товарам</h2>
         <h3 class="main-filter text-catalog">Фильтр:</h3>
@@ -91,7 +103,6 @@
         </div>
         <div class="range-number-wrapper">
           <p class="numbr-range">30000</p>
-        </div>
         </div>
       </section>
       <section class="option-manufacturer">
@@ -121,19 +132,21 @@
       <div class="show-wrapper">
         <button class="show-product text-catalog" type="button" name="show">Показать</button>
       </div>
-    </section>
+    </div>
+    <div class="sorting-product-conteiner">
     <section class="sorting-product">
       <div class="sorting-product-wrapper">
-        <h2 class="text-catalog">СОРТИРОВКА:</h2>
-        <div class="sorting-link">
-          <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
-          <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
-          <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
-          <a href="#" class="arrow-top"></a>
-          <a href="#" class="arrow-bottom"></a>
-        </div>
+      <h2 class="text-catalog">СОРТИРОВКА:</h2>
+      <div class="sorting-link">
+        <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
+        <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
+        <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
+        <a href="#" class="arrow-top"></a>
+        <a href="#" class="arrow-bottom"></a>
       </div>
-      <ul class="product-list">
+    </div>
+    <div class="product-wrapper">
+      <ul class="product-list-catalog">
         <li class="product-item">
           <img src="img/6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <div class="invisible-product">
@@ -283,65 +296,87 @@
         <li class="control-page-item"><a class="text-catalog page-number page-next" href="#">СЛЕДУЮЩАЯ</a></li>
       </ul>
     </section>
+  </div>
+</div>
+</div>
+    <section class="description">
+      <div class="technical-opacity-wrapper center">
+        <div class="section-description">
+      <h1 class="section-title">Пара слов о перфораторах</h1>
+      <div class="technical-opacity">
+      <p>
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+      </p>
+      </div>
+    </div>
+</div>
     </section>
   </main>
-  <footer class="main-footer center">
-    <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-footer" width="138px" height="23px" alt="Логотип компании техномарт" </img></a>
-    <nav class="footer-nav">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Компания</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Новости</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Каталог</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="fooder-contacts-wrapper">
-      <p>
-        г.Санкт-Питербург. ул. Б.Конюшенная, д. 19/8
-      </p>
-      <br>
-      <a class="fooder-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    </div>
-    <nav class="footer-services">
-      <ul class="footer-services-list">
-        <li class="footer-services-item"><a class="footer-services-link" href="#">Материалы</a></li>
-        <li class="footer-services-item"><a class="footer-services-link" href="#">Техника</a></li>
-        <li class="footer-services-item"><a class="footer-services-link" href="#">Инструмент</a></li>
-        <li class="footer-services-item"><a class="footer-services-link" href="#">Спецпредложения</a></li>
-      </ul>
-    </nav>
-    <div class="footer-elems-wrapper">
-      <p>
-        © 2010-2019 Компания "Техномарт"
-        <br> Все права защищены
-      </p>
-      <section class="footer-social-networks">
-        <div class="footer-social-network-wrapper">
-          <h2>Мы в соцсетях</h2>
+  <footer class="main-footer">
+    <div class="center">
+      <div class="footer-nav-container">
+        <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-footer" width="138px" height="23px" alt="Логотип компании техномарт" </img></a>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Компания</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Новости</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Каталог</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="fooder-contacts-wrapper">
+          <p>
+            г.Санкт-Питербург. ул. Б.Конюшенная, д. 19/8
+          </p>
+          <a class="fooder-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <ul class="footer-social-networks-list" title="Мы в соцсетях">
-          <li class="footer-social-networks-item"><a class="footer-social-networks-link" href="#">vk</a></li>
-          <li class="footer-social-networks-item"><a class="footer-social-networks-link" href="#">f</a></li>
-          <li class="footer-social-networks-item"><a class="footer-social-networks-link" href="#">in</a></li>
-        </ul>
-      </section>
-      <div class="feedback-wrapper">
-        <p>
-          Обратная связь:
-          <br>
-          <a class="footer-feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
+        <nav class="footer-services">
+          <ul class="footer-services-list">
+            <li class="footer-services-item"><a class="footer-services-link" href="#">Материалы</a></li>
+            <li class="footer-services-item"><a class="footer-services-link" href="#">Техника</a></li>
+            <li class="footer-services-item"><a class="footer-services-link" href="#">Инструмент</a></li>
+            <li class="footer-services-item"><a class="footer-services-link" href="#">Спецпредложения</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="designed-wrapper">
-        <p>
-          Разработанно:
-          <br>
-          <a class="footer-feedback-link" href="mailto:htmlacademy.ru">htmlacademy.ru</a>
-        </p>
+    </div>
+    <div class="footer-bottom-section">
+      <div class="footer-elems-wrapper center">
+        <div class="footer-сopyright">
+          <p>
+            © 2010-2019 Компания "Техномарт"
+            <br> Все права защищены
+          </p>
+        </div>
+        <section class="footer-social-networks">
+          <div class="footer-social-network-wrapper">
+            <h2>Мы в соцсетях</h2>
+          </div>
+          <ul class="footer-social-networks-list" title="Мы в соцсетях">
+            <li class="footer-social-networks-item"><a class="footer-social-networks-link vk-icon" href="#"></a></li>
+            <li class="footer-social-networks-item"><a class="footer-social-networks-link facebook-icon" href="#"></a></li>
+            <li class="footer-social-networks-item"><a class="footer-social-networks-link instagram-icon" href="#"></a></li>
+          </ul>
+        </section>
+        <div class="link-academy">
+          <div class="feedback-wrapper">
+            <p>
+              Обратная связь:
+              <br>
+              <a class="footer-feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </div>
+          <div class="designed-wrapper">
+            <p>
+              Разработанно:
+              <br>
+              <a class="footer-feedback-link" href="mailto:htmlacademy.ru">htmlacademy.ru</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
-</body>
-
-</html>
