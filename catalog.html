@@ -82,7 +82,7 @@
         </ul>
       </div>
       <section class="catalog-breadcrumb-title">
-        <h1 class="section-title">ПЕРФОРАТОРЫ</h1>
+        <h1 class="section-title breadcrumb-title">ПЕРФОРАТОРЫ</h1>
       </section>
       <div class="catalog-container">
         <div class="sidebar-wrapper">
@@ -90,11 +90,11 @@
             <h2 class="visibilty-hidden">Фильтр по товарам</h2>
             <h3 class="main-filter text-catalog">Фильтр:</h3>
             <div class="range-wrapper">
-              <form class="text-catalog" action="index.html" method="post">
-                <label class="paragraph-sidebar" for="price">Цена:</label>
+              <form class="text-catalog range-price" action="index.html" method="post">
+                <label class="price-title" for="price">Цена:</label>
                 <input class="range-control" type="range" min="0" max="30000" step="1" name="price" value="20000" id="price">
               </form>
-            </div>
+              <div class="range-container">
             <div class="range-number-wrapper">
               <p class="numbr-range">0</p>
             </div>
@@ -103,6 +103,8 @@
             </div>
             <div class="range-number-wrapper">
               <p class="numbr-range">30000</p>
+            </div>
+          </div>
             </div>
           </section>
           <section class="option-manufacturer">
@@ -136,13 +138,15 @@
         <div class="sorting-product-contаiner">
           <section class="sorting-product">
             <div class="sorting-product-wrapper">
-              <h2 class="text-catalog">СОРТИРОВКА:</h2>
+              <h2 class="text-catalog sorting-title">СОРТИРОВКА:</h2>
               <div class="sorting-link">
                 <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
                 <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
                 <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
+                <div class="arrow-wrapper">
                 <a href="#" class="arrow-top"></a>
                 <a href="#" class="arrow-bottom"></a>
+              </div>
               </div>
             </div>
             <div class="product-wrapper">
@@ -287,7 +291,7 @@
                 </li>
               </ul>
           </section>
-          <section>
+          <section class="control-page">
             <h3 class="visibilty-hidden">страницы</h3>
             <ul class="control-page-list">
               <li class="control-page-item"><a class="text-catalog page-number page-number-active" href="#">1</a></li>
@@ -299,18 +303,16 @@
         </div>
       </div>
     </div>
-    <section class="description">
-      <div class="technical-opacity-wrapper center">
-        <div class="section-description">
-          <h1 class="section-title">Пара слов о перфораторах</h1>
-          <div class="technical-opacity">
-            <p>
-              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+    <section class="description-catalog">
+      <div class="technical-opacity-container center section-description">
+          <h1 class="section-title technical-opacity-title">Пара слов о перфораторах</h1>
+          <div class="technical-opacity-wrapper">
+            <p class="technical-opacity">
+              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
               В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
           </div>
-        </div>
       </div>
     </section>
   </main>
