@@ -14,7 +14,7 @@
     <div class="header-elems-container">
       <div class="header-elems-wrapper center">
         <div class="logo-flex-header">
-          <a class="main-logo-header" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-header" width="108px" height="18px" alt="Логотип компани техномарт"></a>
+          <a class="main-logo-header" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-header" width="108" height="18" alt="Логотип компани техномарт"></a>
           <div class="container-search">
             <form>
               <div class="search-icon-wrapper">
@@ -25,13 +25,13 @@
         </div>
         <div class="login-flex-header">
           <div class="container-bookmark box-container">
-            <a class="basket-bookmark bookmark-product" type="button">Закладки: 0</a>
+            <a class="basket-bookmark bookmark-product" href="#">Закладки: 0</a>
           </div>
-          <div class="container-basket box-container">
-            <a class="basket-bookmark basket-product" type="button"> Корзина: 10</a>
+          <div class="container-basket box-container basket-active">
+            <a class="basket-bookmark basket-product" href="#"> Корзина: 10</a>
           </div>
           <div class="container-buy-product box-container">
-            <a class="main-buy-product" type="button">Оформить заказ</a>
+            <a class="main-buy-product" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -53,12 +53,14 @@
         </div>
         <div class="login-option-container">
           <div class="login-option-wrapper">
-            <a href="#" class="login-user " type="button">Равшан Джамшутович</a>
+            <a class="user-icon-link" href="https://profile.com"></a>
+            <a class="login-user " href="https://profile.com">Равшан Джамшутович</a>
+            <a class="user-exit-link " href="https://logout"></a>
           </div>
           <div class="user-option-wrapper">
-            <a href="#" class="user-option user-bye" type="button">Мои заказы</a>
-            <span class="user-crop"></span>
-            <a href="#" class="user-option user-roome" type="button">Личный кабинет</a>
+            <a href="#" class="user-option user-bye">Мои заказы</a>
+            <span class="user-option user-crop"></span>
+            <a href="#" class="user-option user-roome">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -75,6 +77,7 @@
           </ul>
         </nav>
       </div>
+    </div>
   </header>
   <main class="main-content">
     <div class="center">
@@ -93,30 +96,35 @@
       </section>
       <div class="catalog-container">
         <div class="sidebar-wrapper">
-          <section class="filter-product">
-            <h2 class="visibilty-hidden">Фильтр по товарам</h2>
-            <h3 class="main-filter text-catalog">Фильтр:</h3>
-            <div class="range-wrapper">
-              <form class="text-catalog range-price" action="index.html" method="post">
-                <label class="price-title" for="price">Цена:</label>
-                <input class="range-control" type="range" min="0" max="30000" step="1" name="price" value="20000" id="price">
-              </form>
-              <div class="range-container">
-                <div class="range-number-wrapper">
-                  <p class="numbr-range">0</p>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <section class="filter-product">
+              <h2 class="visibilty-hidden">Фильтр по товарам</h2>
+              <h3 class="main-filter text-catalog">Фильтр:</h3>
+              <fieldset class="price-title-wrapper">
+                <legend class="price-title">Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input class="numbr-range" type="number" value="0" name="min-price">
+                    </label>
+                    <div class="middle-range"></div>
+                    <label class="max-price">
+                      <input class="numbr-range" type="number" value="30000" name="max-price">
+                    </label>
+                  </div>
                 </div>
-                <div class="middle-range-wrapper">
-                  <p class="numbr-range middle-range">-</p>
-                </div>
-                <div class="range-number-wrapper">
-                  <p class="numbr-range">30000</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="option-manufacturer">
-            <h2 class="sidebar-name">ПРОИЗВОДИТЕЛИ:</h3>
-              <form class="manufacturer-option" action="catalog.html" method="post">
+              </fieldset>
+            </section>
+            <section class="option-manufacturer">
+              <h2 class="sidebar-name">ПРОИЗВОДИТЕЛИ:</h2>
+              <fieldset class="manufacturer-option">
                 <input class="option" type="checkbox" name="manufacturer1" value="BOSCH" id="manufacturerBOSCH" checked>
                 <label class="text-sidebar variant-style" for="manufacturerBOSCH">BOSCH</label>
                 <input class="option" type="checkbox" name="manufacturer2" value="ИНТЕРСКОЛ" id="manufacturerINTERSKOL">
@@ -127,29 +135,32 @@
                 <label class="text-sidebar variant-style" for="manufacturerDewalt">Dewalt</label>
                 <input class="option" type="checkbox" name="manufacturer5" value="Hitachi" id="manufacturerHitachi">
                 <label class="text-sidebar variant-style" for="manufacturerHitachi">Hitachi</label>
-              </form>
-          </section>
-          <section class="option-battery">
-            <h2 class="sidebar-name">Питание:</h2>
-            <form class="choice-battery" action="index.html" method="post">
-              <input class="battery" type="radio" name="power" value="accumulator" id="accumulator" checked>
-              <label class="accumulator-battery text-sidebar battery-style" for="accumulator">Аккумуляторные</label>
-              <input class="battery" type="radio" name="power" value="mains" id="mains">
-              <label class="mains-battery text-sidebar battery-style" for="mains">Сетевые</label>
-            </form>
-          </section>
-          <div class="show-wrapper">
-            <button class="show-product text-catalog" type="button" name="show">Показать</button>
-          </div>
+              </fieldset>
+            </section>
+            <section class="option-battery">
+              <h2 class="sidebar-name">Питание:</h2>
+              <fieldset class="choice-battery">
+                <input class="battery" type="radio" name="power" value="accumulator" id="accumulator" checked>
+                <label class="accumulator-battery text-sidebar battery-style" for="accumulator">Аккумуляторные</label>
+                <input class="battery" type="radio" name="power" value="mains" id="mains">
+                <label class="mains-battery text-sidebar battery-style" for="mains">Сетевые</label>
+              </fieldset>
+            </section>
+            <div class="show-wrapper">
+              <button class="show-product text-catalog" type="submit" name="show">Показать</button>
+            </div>
+          </form>
         </div>
         <div class="sorting-product-contаiner">
           <section class="sorting-product">
             <div class="sorting-product-wrapper">
               <h2 class="text-catalog sorting-title">СОРТИРОВКА:</h2>
               <div class="sorting-link">
-                <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
-                <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
-                <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
+                <div class="sorting-link-wrapper">
+                  <a href="#" class="text-catalog sorting-menu">ПО ЦЕНЕ</a>
+                  <a href="#" class="text-catalog sorting-menu">ПО ТИПУ</a>
+                  <a href="#" class="text-catalog sorting-menu">ПО ФУНКЦИОНАЛУ</a>
+                </div>
                 <div class="arrow-wrapper">
                   <a href="#" class="arrow-top"></a>
                   <a href="#" class="arrow-bottom"></a>
@@ -198,7 +209,6 @@
                     </div>
                   </div>
                 </li>
-                </li>
                 <li class="product-item">
                   <div class="invisible-menu-container">
                     <img class="visible-product" src="img/6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -259,7 +269,8 @@
                     </div>
                   </div>
                 </li>
-                <li class="product-item">
+                <li class="product-item product-item-new">
+
                   <div class="invisible-menu-container">
                     <img class="visible-product" src="img/2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                     <div class="invisible-product">
@@ -328,12 +339,29 @@
                     <p class="product-title">Перфоратор BOSCH<br> BFG 2000</p>
                   </div>
                   <div class="product-price-container">
-                    <div class="product-price">
+                    <div class="product-price ">
                       <p class="product-title">12500 Р.</p>
                     </div>
                   </div>
                 </li>
               </ul>
+              <div class="modal modal-basket modal-invisible">
+                <button class="modal-close" type="button"></button>
+                <div class="modal-close-container">
+                  <div class="checked-label-wrapper">
+                    <div class="checked-label">
+                    </div>
+                    <p class="text-modal-basket">Товар добавлен в корзину!</p>
+                  </div>
+                  <div class="modal-basket-controls-wrapper">
+                    <div class="modal-basket-controls">
+                      <a class="red-link send-link modal-buy-product" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                      <a class="red-link send-link modal-next-buy" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="control-page">
             <h3 class="visibilty-hidden">страницы</h3>
@@ -363,12 +391,12 @@
   <footer class="main-footer">
     <div class="center">
       <div class="footer-nav-container">
-        <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-footer" width="138px" height="23px" alt="Логотип компании техномарт" </img></a>
+        <a class="main-logo-footer" href="index.html"><img src="img/logo-technomart.svg" class="center-logo-footer" width="138" height="23" alt="Логотип компании техномарт"></a>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
             <li class="footer-nav-item"><a class="footer-nav-link" href="#">Компания</a></li>
             <li class="footer-nav-item"><a class="footer-nav-link" href="#">Новости</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Каталог</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
             <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
             <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
           </ul>
@@ -393,8 +421,8 @@
       <div class="footer-elems-wrapper center">
         <div class="footer-сopyright">
           <p>
-            © 2010-2019 Компания <Техномарт>
-              <br> Все права защищены
+            © 2010-2019 Компания &lt;Техномарт&gt;
+            <br> Все права защищены
           </p>
         </div>
         <section class="footer-social-networks">
@@ -419,7 +447,7 @@
             <p class="text-title-footer">
               Разработано -
               <br>
-              <a class="footer-feedback-link" href="mailto:htmlacademy.ru">htmlacademy.ru</a>
+              <a class="footer-feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
