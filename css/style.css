@@ -39,7 +39,7 @@
   --modal-footer: #F1F1F1;
   --modal-footer: #F4F4F4;
   --special-control: #D7DCDE;
-  --special-bar: #00ca74;
+  --special-bar: #00CA74;
   --special-toggle: #ABABAB;
   --opacity-gray: rgba(0, 0, 0, 0.3);
   --special-grey: #A9A9A9;
@@ -919,6 +919,7 @@
   position: absolute;
   top: 5px;
   right: -27px;
+  z-index: 1;
 }
 
 .product-title {
@@ -1049,6 +1050,9 @@
   text-transform: uppercase;
   color: var(--basic-white);
   font-weight: normal;
+  margin-bottom: 10px;
+  border: 0;
+  outline: none;
 }
 
 .buy-product:hover {
@@ -1071,6 +1075,7 @@
   line-height: 18px;
   font-weight: normal;
   color: var(--special-darken);
+  outline: none;
 }
 
 .in-bookmark-product:hover {
@@ -1896,8 +1901,6 @@
 
 /*Catalog*/
 /*header*/
-.login-option-container {}
-
 .login-option-wrapper {
   width: 299px;
   height: 45px;
@@ -2333,7 +2336,6 @@
 
 .option:checked+.variant-style::after {
   content: '';
-  border: 1px solid var(--basic-grey);
   width: 23px;
   height: 23px;
   background: no-repeat url('../img/checkbox-on.svg');
@@ -2547,6 +2549,7 @@
 
 .page-number-active {
   background-color: var(--basic-red);
+  color: var(--basic-white);
 }
 
 .technical-opacity-container {
